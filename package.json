@@ -1,0 +1,53 @@
+{
+  "name": "demo-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server-dev": "nodemon ./bin/www",
+    "client-dev": "webpack -w",
+    "start:dev": "concurrently \"npm:server-dev\" \"npm:client-dev\"",
+    "start": "webpack && node bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmckanry/demo-app.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pmckanry/demo-app/issues"
+  },
+  "homepage": "https://github.com/pmckanry/demo-app#readme",
+  "dependencies": {
+    "@babel/plugin-transform-async-to-generator": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/runtime": "^7.8.4",
+    "bootstrap": "^4.4.1",
+    "concurrently": "^5.1.0",
+    "cookie-parser": "^1.4.4",
+    "css-loader": "^3.4.2",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "http-errors": "^1.7.3",
+    "lodash": "^4.17.15",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.2",
+    "nunjucks": "^3.2.0",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-dom": "^16.12.0",
+    "style-loader": "^1.1.3",
+    "superagent": "^5.2.1",
+    "webpack": "^4.41.5",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "babel-loader": "^8.0.6",
+    "webpack-cli": "^3.3.10"
+  }
+}
