@@ -12,10 +12,10 @@ export default class BreweryList extends React.Component {
                 <td>{b.city}</td>
                 <td>{b.state}</td>
                 <td>{b.country}</td>
-                <td>{b.website_url}</td>
+                <td><a href={b.website_url}>{b.website_url}</a></td>
             </tr>
         ));
-
+         
         return (
             <Table responsive>
                 <thead>
